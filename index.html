@@ -3,136 +3,321 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FF Electromecánica</title>
+
+<title>FF Electromecánica | Soluciones Industriales</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f8fc;
-    color: #1a1a1a;
+
+*{
+box-sizing:border-box;
 }
 
-header {
-    background: #004aad;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6f8;
+color:#222;
 }
 
-.logo {
-    font-size: 55px;
-    font-weight: bold;
-    letter-spacing: 3px;
+header{
+background:linear-gradient(135deg,#002b5c,#0066cc);
+color:white;
+padding:60px 20px;
+text-align:center;
 }
 
-header h1 {
-    margin: 10px 0;
+.logo{
+font-size:70px;
+font-weight:900;
+letter-spacing:5px;
 }
 
-section {
-    padding: 30px 20px;
-    max-width: 1000px;
-    margin: auto;
+header h1{
+font-size:35px;
+margin:10px 0;
 }
 
-h2 {
-    color: #004aad;
-    text-align: center;
+header p{
+font-size:20px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+.btn{
+display:inline-block;
+background:#25d366;
+color:white;
+padding:15px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin-top:20px;
 }
 
-ul {
-    line-height: 1.8;
+section{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
 }
 
-.btn {
-    display: block;
-    width: 220px;
-    text-align: center;
-    margin: 25px auto;
-    background: #25D366;
-    color: white;
-    padding: 15px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
+.titulo{
+text-align:center;
+color:#003b73;
+font-size:30px;
+margin-bottom:30px;
 }
 
-footer {
-    background: #004aad;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.card{
+background:white;
+padding:25px;
+margin:20px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
 }
+
+.servicios{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.item{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.item h3{
+color:#0066cc;
+}
+
+.contacto{
+text-align:center;
+}
+
+.contacto a{
+color:#0066cc;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer{
+background:#002b5c;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25d366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+}
+
 </style>
 
 </head>
 
 <body>
 
+
 <header>
-    <div class="logo">FF</div>
-    <h1>FF Electromecánica</h1>
-    <p>Reparaciones • Restauraciones • Reformas • Automatizaciones</p>
+
+<div class="logo">FF</div>
+
+<h1>FF Electromecánica</h1>
+
+<p>
+Donde otros ven fallas, nosotros vemos soluciones
+</p>
+
+<p>
+Soluciones electromecánicas para industrias,
+comercios y hogares.
+</p>
+
+<a class="btn" href="https://wa.me/541136390653">
+Solicitar presupuesto
+</a>
+
 </header>
+
 
 
 <section>
 
+<h2 class="titulo">
+Nuestra empresa
+</h2>
+
 <div class="card">
-<h2>Sobre nosotros</h2>
+
 <p>
-Somos una empresa especializada en soluciones electromecánicas,
-brindando servicios para hogares, comercios e industrias.
-Trabajamos con compromiso, seguridad y calidad profesional.
+FF Electromecánica brinda soluciones profesionales
+en electricidad, automatización y mantenimiento
+electromecánico.
+
+Nuestro objetivo es ofrecer trabajos seguros,
+eficientes y adaptados a las necesidades de cada cliente.
 </p>
-</div>
-
-
-<div class="card">
-<h2>Servicios</h2>
-
-<ul>
-<li>Electricidad domiciliaria e industrial</li>
-<li>Electricista matriculado</li>
-<li>Bajadas de medidores y certificaciones DCI</li>
-<li>Mecánica industrial</li>
-<li>Refrigeración domiciliaria e industrial</li>
-<li>Reparación de compresores y sistemas de aire comprimido</li>
-<li>Automatizaciones y tableros eléctricos</li>
-<li>Montajes industriales</li>
-</ul>
 
 </div>
 
 
-<div class="card">
-<h2>Contacto</h2>
+<h2 class="titulo">
+Servicios
+</h2>
 
+
+<div class="servicios">
+
+
+<div class="item">
+<h3>⚡ Electricidad</h3>
 <p>
-📍 Hurlingham, Buenos Aires, Argentina
+Instalaciones domiciliarias e industriales,
+tableros eléctricos y mantenimiento.
 </p>
+</div>
 
-<a class="btn" href="https://wa.me/541136390653">
-Contactar por WhatsApp
-</a>
+
+<div class="item">
+<h3>⚙️ Electromecánica</h3>
+<p>
+Reparación y mantenimiento de máquinas,
+motores y equipos industriales.
+</p>
+</div>
+
+
+<div class="item">
+<h3>🤖 Automatización</h3>
+<p>
+Diseño y montaje de comandos,
+automatizaciones y mejoras de procesos.
+</p>
+</div>
+
+
+<div class="item">
+<h3>❄️ Refrigeración</h3>
+<p>
+Sistemas domiciliarios, comerciales e industriales.
+</p>
+</div>
+
+
+<div class="item">
+<h3>🔧 Montajes</h3>
+<p>
+Montajes eléctricos, mantenimiento y reformas.
+</p>
+</div>
+
+
+<div class="item">
+<h3>🏠 Certificaciones</h3>
+<p>
+Bajadas de medidores y certificaciones DCI.
+</p>
+</div>
+
 
 </div>
 
 </section>
 
 
+
+<section>
+
+<h2 class="titulo">
+¿Por qué elegir FF?
+</h2>
+
+
+<div class="card">
+
+<ul>
+
+<li>Personal técnico especializado.</li>
+
+<li>Soluciones para hogares, comercios e industrias.</li>
+
+<li>Compromiso con la seguridad y calidad.</li>
+
+<li>Atención personalizada.</li>
+
+<li>Respuesta rápida ante fallas y necesidades.</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+
+<section class="contacto">
+
+<h2 class="titulo">
+Contacto
+</h2>
+
+<div class="card">
+
+<p>
+📍 Hurlingham, Buenos Aires, Argentina
+</p>
+
+<p>
+📱 WhatsApp:
+<a href="https://wa.me/541136390653">
+11 3639-0653
+</a>
+</p>
+
+<p>
+📧 Email:
+<a href="mailto:ffmant.26@gmail.com">
+ffmant.26@gmail.com
+</a>
+</p>
+
+
+<a class="btn" href="mailto:ffmant.26@gmail.com">
+Enviar consulta
+</a>
+
+
+</div>
+
+</section>
+
+
+
 <footer>
-<p>© FF Electromecánica - Soluciones profesionales</p>
+
+<p>
+FF Electromecánica © 2026
+</p>
+
 </footer>
+
+
+<a class="whatsapp" href="https://wa.me/541136390653">
+✆
+</a>
+
 
 </body>
 </html>
