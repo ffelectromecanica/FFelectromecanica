@@ -1,1 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #0b3d91;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container img {
+    width: 80px;
+    height: auto;
+}
+
+.logo-container h1 {
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("industrial.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-content {
+    max-width: 800px;
+    color: white;
+}
+
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.botones {
+    margin-top: 30px;
+}
+
+
+.btn {
+    display: inline-block;
+    background: #0b3d91;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+.btn:hover {
+    background: #06265c;
+}
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #0b3d91;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+
+section p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+.card h3 {
+    color: #0b3d91;
+    margin-bottom: 15px;
+}
+
+
+#proceso ol {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: left;
+    font-size: 18px;
+}
+
+
+#contacto {
+    background: #0b3d91;
+    color: white;
+}
+
+
+#contacto h2 {
+    color: white;
+}
+
+
+#contacto strong {
+    color: white;
+}
+
+
+footer {
+    background: #071a38;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+
+footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+footer p {
+    margin: 8px;
+}
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    nav {
+        margin-top: 15px;
+    }
+
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+
+    .logo-container h1 {
+        font-size: 22px;
+    }
+
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+    .btn {
+        width: 90%;
+        margin: 8px auto;
+    }
+
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+strong {
+    color: #0b3d91;
+}
+
+
+.hero-logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+
+.card p {
+    color: #555;
+}
+
+
+#empresa {
+    background: white;
+}
+
+
+#especialistas {
+    background: #eef4ff;
+}
+
+
+#servicios {
+    background: white;
+}
+
+
+#porque-elegirnos {
+    background: #eef4ff;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
