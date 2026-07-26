@@ -1,71 +1,105 @@
-// ==============================
-// FF ELECTROMECÁNICA
-// SCRIPT.JS
-// ==============================
+// ======================================
+// FF ELECTROMECÁNICA V3
+// script.js
+// ======================================
 
-// Animación al hacer scroll
+// Menú hamburguesa
+const menuBtn = document.getElementById("menu-btn");
+const menu = document.getElementById("menu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+
+// Cerrar menú al hacer clic en un enlace
+document.querySelectorAll("nav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        menu.classList.remove("active");
+
+    });
+
+});
+
+// Header al hacer scroll
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 60) {
+
+        header.style.background = "#07162f";
+        header.style.boxShadow = "0 10px 25px rgba(0,0,0,.25)";
+
+    } else {
+
+        header.style.background = "rgba(8,22,52,.92)";
+        header.style.boxShadow = "none";
+
+    }
+
+});
+
+// Scroll suave
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+    anchor.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        const destino = document.querySelector(this.getAttribute("href"));
+
+        if (destino) {
+
+            destino.scrollIntoView({
+
+                behavior: "smooth"
+
+            });
+
+        }
+
+    });
+
+});
+
+// Animaciones al aparecer
 const elementos = document.querySelectorAll(
-'.servicio-card, .especialidad, .porque-card, .foto'
+".card, .service-card, .galeria-item, .item"
 );
 
-const observer = new IntersectionObserver((entries)=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add('show');
-}
-});
-},{
-threshold:0.2
-});
+const observer = new IntersectionObserver((entries) => {
 
-elementos.forEach(el=>{
-el.classList.add('fade');
-observer.observe(el);
-});
+    entries.forEach(entry => {
 
-// Menú con efecto al desplazarse
-window.addEventListener("scroll",()=>{
+        if (entry.isIntersecting) {
 
-const header=document.querySelector("header");
+            entry.target.classList.add("show");
 
-if(window.scrollY>80){
+        }
 
-header.style.background="#ffffff";
-header.style.boxShadow="0 10px 30px rgba(0,0,0,.12)";
+    });
 
-}else{
+}, {
 
-header.style.background="rgba(255,255,255,.95)";
-header.style.boxShadow="0 5px 20px rgba(0,0,0,.08)";
-
-}
+    threshold: 0.15
 
 });
 
-// Scroll suave del menú
-document.querySelectorAll('nav a').forEach(link=>{
+elementos.forEach(el => {
 
-link.addEventListener('click',function(e){
+    el.classList.add("fade");
 
-e.preventDefault();
-
-const destino=document.querySelector(this.getAttribute('href'));
-
-destino.scrollIntoView({
-
-behavior:'smooth'
+    observer.observe(el);
 
 });
 
-});
+// Año automático del footer (si agregás un span con id="year")
+const year = document.getElementById("year");
 
-});
+if (year) {
 
-// Año automático del footer (si agregás un elemento con id="year")
-const year=document.getElementById("year");
-
-if(year){
-
-year.textContent=new Date().getFullYear();
+    year.textContent = new Date().getFullYear();
 
 }
