@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://ffelectromecanica.github.io/FFelectromecanica/sitemap.xml
